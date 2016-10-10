@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<script   src="http://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+
+<script>
+$.getJSON( "http://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&APPID=92cc96ecfe265f251d814b66592a7848", function( data ) {
+console.log(data);
+  var items = [];
+  $.each( data, function( name, property ) {
+    items.push( "<li id='" + name + "'>" + name + ' ' + property + "</li>" );
+  });
+ 
+  $( "<ul/>", {
+    "class": "my-new-list",
+    html: items.join( "" )
+  }).appendTo( "body" );
+});
+</script>
+<meta charset="UTF-8">
+<title>API TEST JSON</title>
+</head>
+
+<body>
+</body>
+</html>
