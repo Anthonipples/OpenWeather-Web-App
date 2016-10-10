@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+
+<script>
+window.onload = function() {
+    // all of your code goes in here
+    // it runs after the DOM is built
+
+var xhr = new XMLHttpRequest();
+xhr.open("GET","http://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&APPID=92cc96ecfe265f251d814b66592a7848",false);
+xhr.send();
+console.log(xhr.status);
+console.log(xhr.statusText);
+console.log(xhr.response);
+}
+</script>
+<meta charset="UTF-8">
+<title>Weather API Test</title>
+</head>
+
+<body id="body">
+<div id="document"></div>
+</body>
+</html>

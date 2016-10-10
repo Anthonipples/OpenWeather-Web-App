@@ -50,7 +50,7 @@ ini_set('display_errors', 1);
 <div class="container">
 <div class="info">
 	<div class="cityName"><?php echo $city;?></div>
-    <div class="tempDeg"><?php echo $temp;?>&deg;</div>
+    <div class="tempDeg"><?php echo round($temp);?><span class="deg">&deg;</span></div>
     <div class="sky"><?php echo $clouds;?></div>
     <div class="windSpeed"><?php echo $wind;?> Knots</div>
 </div>
