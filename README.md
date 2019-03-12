@@ -1,2 +1,2 @@
 # OpenWeather-Web-App
-An exercise in learning to use API's
+A web App built on the openweather API to display current weather for a specific location
